@@ -18,7 +18,7 @@ public class Question07_3 {
 		// TODO: 実装ここから
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String str;
-		int sumPrices = 0;
+		int totalPrice = 0;
 
 		int[] stocks = new int[itemNames.length];
 
@@ -41,10 +41,10 @@ public class Question07_3 {
 		for (int i = 0; i < itemNames.length; i++) {
 			System.out.println(itemNames[i] + "：購入" + amounts[i] + "個");
 			System.out.println("在庫" + stocks[i] + "個");
-			sumPrices = sumPrices + prices[i] * amounts[i];
+			totalPrice = totalPrice + prices[i] * amounts[i];
 		}
 
-		System.out.println("合計金額：" + sumPrices + "円");
+		System.out.println("合計金額：" + totalPrice + "円");
 
 	}
 }
