@@ -15,7 +15,7 @@ public class Question07_2 {
 
 		// TODO: 実装ここから
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int[] amounts = new int[5];
+		int[] amounts = new int[itemNames.length];
 		String str;
 
 		for (int i = 0; i < itemNames.length; i++) {
