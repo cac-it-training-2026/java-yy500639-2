@@ -32,12 +32,12 @@ public class Question07_5 {
 		System.out.println("購入内容一覧：");
 		for (int i = 0; i < itemNames.length; i++) {
 			System.out.println(itemNames[i] + "：単価" + prices[i] + "円（税込" + priceWithTax[i] + "円）×" + amounts[i] + "個 = "
-					+ (priceWithTax[i] * amounts[i]) + "円");
+					+ (priceWithTax[i] * amounts[i]) + '円');
 		}
-		System.out.println("合計（税込）：" + totalPrices + "円");
+		System.out.println("合計（税込）：" + totalPrices + '円');
 
 		if (totalPrices >= 5000) {
-			System.out.println("割引後合計（税込）：" + (int) (totalPrices * 0.9) + "円");
+			System.out.println("割引後合計（税込）：" + (int) (totalPrices * 0.9) + '円');
 		}
 	}
 }
